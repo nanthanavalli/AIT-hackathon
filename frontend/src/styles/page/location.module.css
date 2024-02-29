@@ -1,0 +1,102 @@
+.location {
+  min-height: 85vh;
+  padding-top: 10rem;
+  margin: auto;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.heading {
+  padding-bottom: 3rem;
+  font-size: 50px;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #503938;
+  min-height: 60vh;
+  padding: 1%;
+  width: 80%;
+  border-radius: 44px;
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
+}
+
+.map {
+  border-radius: 25px;
+  border: #4d291a 3px solid;
+  width: 60%;
+  height: 50vh;
+}
+
+.locationDetails {
+  margin: 0 0rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  /* height: 30vh; */
+  /* background-color: red; */
+  /* color: #4d291a; */
+}
+
+
+.locationDetails > h1 {
+  font-size: 40px;
+}
+.locationDetails > p {
+  padding: 1rem 0 1rem 0;
+  font-family: "DM Sans";
+  font-size: 20px;
+}
+
+
+.routeButton {
+  text-decoration: none;
+  padding: 2% 4%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4e4ea9;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.routeButton:hover {
+  background-color: #4e4ea9;
+  box-shadow: 0px 15px 20px #4e4ea99b;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.routeButton:active {
+  transform: translateY(-1px);
+}
+
+@media screen and (width < 800px) {
+  .flexContainer{
+    display: block;
+    margin-bottom: 4rem;
+    width: 90%;
+  }
+  .buttonContainer{
+    margin-bottom: 4rem;
+  }
+  .locationDetails{
+    margin: 3rem 1rem 0 1rem;
+  }
+  .map{
+    margin-top: 30px;
+    width: 80vw;
+  }
+  .routeButton {
+    text-decoration: none;
+    padding: 4% 8%;
+  }
+}

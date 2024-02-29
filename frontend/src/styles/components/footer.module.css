@@ -1,0 +1,117 @@
+.wrapper{
+  width: 100%;
+  background-color: #030303;
+  height: 100%;
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.footer {
+  color: white;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 999;
+}
+.footerContainer{
+  background-image: url("../../assets/images/TECHNOWAYS.png");
+  background-size: contain;
+  background-position: center;
+  min-height: 30vh;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media screen and (width > 1024px) {
+  .clgLogo{
+    /* background-color: red; */
+    width: 100%;
+  }
+  .svceContainer{
+    width: 30%;
+    /* background-color: red; */
+  }
+}
+@media screen and (width <= 1024px ) {
+  .clgLogo{
+    /* background-color: red; */
+    width: 80%;
+  }
+}
+.footer > * {
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+}
+
+.svceContainer{
+  min-width: 30%;
+  /* background-color: red; */
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.svceContainer > h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footerLogo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem;
+}
+
+.img {
+  width: 500px;
+}
+
+.menuContactsDiv {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5rem;
+}
+
+.addressPara {
+  width: 20rem;
+}
+
+.contactLogo {
+  margin-right: 1rem;
+}
+
+@media screen and (width < 1200px) {
+  .footer {
+    display: block;
+  }
+  .menuContactsDiv {
+    margin-top: 3rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (width < 700px) {
+  .footer {
+    padding: 2rem;
+  }
+  .img {
+    width: 200px;
+  }
+  .svceContainer > h2 {
+    font-size: medium;
+  }
+  .footerLogo{
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+  .addressPara {
+    width: 12rem;
+  }
+  .menuContactsDiv {
+    gap: 1rem;
+    /* font-size: small; */
+  }
+}

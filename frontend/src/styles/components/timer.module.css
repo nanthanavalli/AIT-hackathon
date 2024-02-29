@@ -1,0 +1,12 @@
+.timer{
+  /* padding-top: 3%; */
+  font-size: 4vw;
+  font-family: "dune";
+}
+
+@media screen and (width < 600px) {
+  .timer{
+    width: 100%;
+    /* word-spacing: -8vw; */
+  }
+}

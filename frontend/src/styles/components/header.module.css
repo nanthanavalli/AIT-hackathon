@@ -1,0 +1,133 @@
+.container {
+  font-family: "Space Grotesk", sans-serif;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 0 0 0;
+  z-index: 5;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.active{
+  color: red;
+}
+.inactive{
+  color: white;
+}
+.logo {
+  height: 40px;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+.menu {
+  display: none;
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  margin: 0 2rem 0 0;
+}
+
+.close {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  transition: all 0.4s ease-in;
+  margin: 1.8rem 0rem 0 0rem;
+  position: absolute;
+  right: 2rem;
+}
+
+.navMobile {
+  display: none;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid #503938;
+  position: fixed;
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  width: 70%;
+  height: 100%;
+  padding: 0rem 0 0 1rem;
+  font-size: x-large;
+  transition: all  400ms ease-out;
+}
+
+.navMobile>nav>a {
+  text-decoration: none;
+  font-family: "DM Sans";
+}
+
+.navMobile>nav {
+  margin: 6rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navMobile>section {
+  padding: 0rem 0 0 1rem;
+  bottom: 0;
+  color: white;
+  
+  position: absolute;
+}
+
+.navMobile>section>p {
+  color: white;
+  
+  font-family: "DM Sans";
+}
+
+.navDesktop {
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+  & a {
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+      text-decoration: none;
+      display: inline-block;
+      color: #eb0029;
+    }
+  }
+}
+
+.navMobile.hide {
+  right: -35rem;
+}
+
+.navMobile.open {
+  right: 0;
+}
+
+.userDetails {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    border-radius: 0 0 0px 0px;
+  }
+
+  .navDesktop {
+    display: none;
+  }
+
+  .navMobile {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+  }
+}
