@@ -6,25 +6,19 @@ const Domain: React.FC = () =>{
     useEffect(() =>{
         window.scrollTo(0,0);
     },[]);
-    return(
-        <>
-        <div id="domain">
-          {/* <Header /> */}
-          <div className={styles.body}>
-            <h1 className={styles.title}>Domains</h1>
-            <br />
-            <div className={styles.container}>
-            <h3>
-            Technoways, SVCE's inaugural interdisciplinary technical event,
-            highlights technology, innovation, and creativity on March
-            15th-16th.   
-            </h3>
-            
+    return (
+      <>
+        <Header />
+        <div className={styles.space}></div>
+        <div className={styles.domainData} id="domain"></div>
+        <h1 className={styles.title}>Domain</h1>
+        <div className={styles.container}>
+          <div className={styles.domain}>
+            <h3 className={styles.text}>domain</h3>
           </div>
         </div>
-        </div>
-        </>
-    )
-}
+      </>
+    );
+  };
 
 export default Domain;

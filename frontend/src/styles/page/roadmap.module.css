@@ -18,3 +18,17 @@
   text-align: center;
 
   }
+
+  .space{
+    height: 7rem ;
+  }
+
+  .rmapData{
+    font-family: "minimal";
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    margin-bottom: 3vh;
+  }

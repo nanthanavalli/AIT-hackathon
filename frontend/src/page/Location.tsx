@@ -8,7 +8,7 @@ const Location = () => {
   },[]);
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <div className={styles.location} id="location">
         <center>
           <h1 className={styles.title}>Location</h1>

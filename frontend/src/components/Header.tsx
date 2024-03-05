@@ -120,7 +120,18 @@ return (
           >
             Location
           </NavLink>
-          
+          <NavLink
+            to={"/domain"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
+          >
+            Domain
+          </NavLink>  
+          <NavLink
+            to={"/roadmap"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
+          >
+            Roadmap
+          </NavLink>
         </nav>
       </div>
       <div className={color ?`${styles.container} ${styles.header_bg}`: `${styles.container} `}>
@@ -156,6 +167,18 @@ return (
             className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Location
+          </NavLink>
+          <NavLink
+            to={"/domain"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
+          >
+            Domain
+          </NavLink>
+          <NavLink
+            to={"/roadmap"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
+          >
+            Roadmap
           </NavLink>
         </nav>
       </div>

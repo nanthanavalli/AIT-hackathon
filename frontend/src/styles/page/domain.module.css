@@ -17,3 +17,17 @@
     font-weight: lighter;
     text-align: center;
   }
+
+  .space{
+    height: 7rem ;
+  }
+
+  .domainData{
+    font-family: "minimal";
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    margin-bottom: 3vh;
+  }
