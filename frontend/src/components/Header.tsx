@@ -2,14 +2,34 @@ import styles from "../styles/components/header.module.css";
 import logo from "../assets/images/icons/AIT_logo_B⁄W.png";
 import { NavLink } from "react-router-dom";
 // import { Link } from "react-scroll";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
+  const [color, setColor] = useState(false)
+  const changeColor =() =>{
+    if(window.scrollY >=140)
+    {
+      console.log(0)
+      setColor(true)
+    }
+    else
+    {
+      console.log(1)
+      setColor(false)
+    }
+  }
 
-  return (
+useEffect(() =>{
+  window.addEventListener('scroll', changeColor)
+})
+
+
+
+// const headerClassName = color ? styles.container : styles.container + " " + styles.header_bg;
+return (
     <>
       <div
         className={`${styles.navMobile} ${
@@ -92,7 +112,7 @@ function Header() {
             to={"/sponsors"}
             className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
-            Sponsers
+            Contacts
           </NavLink>
           <NavLink
             to={"/location"}
@@ -103,8 +123,9 @@ function Header() {
           
         </nav>
       </div>
-      <div className={styles.container}>
-        <img src={logo} alt="Tech Fest" className={styles.logo} />
+      <div className={color ?`${styles.container} ${styles.header_bg}`: `${styles.container} `}>
+      
+        <img src={logo} alt="AIT logo" className={styles.logo} />
         <IoMenu
           className={styles.menu}
           onClick={() => {

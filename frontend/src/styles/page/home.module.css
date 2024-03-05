@@ -2,13 +2,13 @@
   .rev {
     letter-spacing: 1vw;
     font-size: 10px;
-    font-family: "dune";
 
   }
 
   .tech {
     padding: 1vh 0;
     letter-spacing: 2vw;
+    font-family: "dune";
   }
 
   .time {
@@ -50,6 +50,7 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    font-family: "minimal";
   }
 
   .title:hover {
@@ -84,15 +85,6 @@
   text-align: end;
 }
 
-.content h1 {
-  font-family: RebelCaps;
-}
-
-
-
-.content h1 {
-  font-family: RebelCaps;
-}
 
 @media screen and (width > 1024px) {
   .eventInfo {
@@ -112,7 +104,6 @@
     padding: 1.4% 4%;
     font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
     font-weight: 500;
     color: #fff;
     background-color: rgba(50, 44, 44, 0.258);
@@ -125,9 +116,12 @@
     outline: none;
     border: 2px solid #503938;
   }
-  .an{
+  .an{font-family: "minimal";
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: large  ;
   }
   
   .title:hover {
@@ -209,7 +203,7 @@
 }
 
 .home {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "dune";
   display: flex;
   justify-content: center;
   align-items: center;

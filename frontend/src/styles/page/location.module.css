@@ -1,13 +1,15 @@
 .location {
   min-height: 85vh;
-  padding-top: 10rem;
+  padding-top: 8rem;
   margin: auto;
-  font-family: "Space Grotesk", sans-serif;
 }
 
-.heading {
-  padding-bottom: 3rem;
-  font-size: 50px;
+.title{
+  margin: 4vh 0 ;
+  font-size: 25px;
+  font-family: "dune";
+  font-weight: lighter;
+  text-align: center;
 }
 
 .flexContainer {
@@ -34,20 +36,20 @@
   margin: 0 0rem 0 4rem;
   display: flex;
   flex-direction: column;
-  /* align-items: start; */
-  /* height: 30vh; */
-  /* background-color: red; */
-  /* color: #4d291a; */
+  
 }
 
 
 .locationDetails > h1 {
   font-size: 40px;
+  font-family: "minimal";
+  letter-spacing: 3px;
 }
 .locationDetails > p {
   padding: 1rem 0 1rem 0;
-  font-family: "DM Sans";
-  font-size: 20px;
+  font-family: "minimal";
+  font-size: 25px;
+  letter-spacing: 3px;
 }
 
 
@@ -56,7 +58,6 @@
   padding: 2% 4%;
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
   font-weight: 500;
   color: #fff;
   background-color: #4e4ea9;
@@ -66,6 +67,9 @@
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  font-family: "minimal";
+  letter-spacing: 5px;
+  font-weight: bold;
 }
 
 .routeButton:hover {
@@ -100,3 +104,4 @@
     padding: 4% 8%;
   }
 }
+

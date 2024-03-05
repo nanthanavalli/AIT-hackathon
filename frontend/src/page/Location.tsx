@@ -1,13 +1,17 @@
+import { useEffect } from "react";
 import Header from "../components/Header";
 import styles from "../styles/page/location.module.css";
 
 const Location = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[]);
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className={styles.location} id="location">
         <center>
-          <h1 className={styles.heading}>Location</h1>
+          <h1 className={styles.title}>Location</h1>
           <div className={styles.flexContainer}>
             <iframe
               title="location"

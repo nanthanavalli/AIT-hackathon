@@ -1,5 +1,5 @@
 .aboutData{
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "minimal";
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -23,16 +23,18 @@
   border-radius: 44px;
   background-color: rgba(50, 44, 44, 0.258);
   backdrop-filter: blur(10px);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "minimal";
 }
 
 .space{
   height: 7rem ;
 }
 .title{
-  margin-top: 2vh;
-  font-size: 40px;
-  font-family: "Space Grotesk", sans-serif;
+  margin: 4vh 0 ;
+  font-size: 25px;
+  font-family: "dune";
+  font-weight: lighter;
+  text-align: center;
 }
 
 .title:nth-child(1) {
@@ -40,26 +42,19 @@
 }
 
 .about {
-  & h3 {
+    text-align: justify;
+    font-weight: 500;
+    word-spacing: 0.4rem;
+}
+
+
+.text{
     text-align: justify;
     font-weight: 520;
     word-spacing: 0.4rem;
-  }
-}
-.aboutSvce {
-  text-align: justify;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.wrapper {
-  flex-direction: column;
-  flex: 1;
-  & h3 {
-    font-weight: 520;
-    word-spacing: 0.4rem;
-  }
+    font-family: "minimal";
+    font-size:x-large;
+    letter-spacing: 0.1cap;
 }
 
 .img {

@@ -2,10 +2,12 @@ import styles from "../styles/page/home.module.css";
 //import Header from "../components/Header";
 import About from "./About";
 import Location from "./Location";
+import Domain from "./Domain";
+import RoadMap from "./RoadMap";
 import Scroller from "../components/Scroller";
 import Timer from "../components/Timer";
 import Footer from "../components/Footer";
-import Sponsers from "./Sponsers";
+import Sponsers from "./Contacts";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import Header from "../components/Header";
@@ -19,15 +21,14 @@ const Home = () => {
           <p className={styles.rev}>24HRS HACKATHON</p>
           <h1 className={styles.tech}>
             <span>I</span>
-            <span>N</span>
-            <span>N</span>
-            <span>O</span>
-            <span>H</span>
-            <span>A</span>
-            <span>C</span>
-            <span>K</span>
-            <span>S</span>
-            {/* <span>S</span> */}
+            <span>n</span>
+            <span>n</span>
+            <span>o</span>
+            <span>h</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>s</span>
           </h1>
           <br />
           <p className={styles.time}>MAR 19 2024</p>
@@ -37,9 +38,6 @@ const Home = () => {
           <p className={styles.timer}>
             <Timer />
           </p>
-          {/* <p>
-            <Scroller />
-          </p> */}
         </div>
         <div style={{ height: "8%" }}></div>
         <div className={styles.eventInfo}>
@@ -56,6 +54,8 @@ const Home = () => {
       <About />
       <Location />
       <Sponsers />
+      <Domain />
+      <RoadMap />
       <Footer />
     </>
   );

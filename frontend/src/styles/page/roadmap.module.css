@@ -1,0 +1,20 @@
+.container {
+    min-height: 5vh;
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+    border: 1px solid #503938;
+    border-radius: 44px;
+    background-color: rgba(50, 44, 44, 0.258);
+    backdrop-filter: blur(10px);
+    font-family: "minimal";
+  }
+
+.title{
+  margin: 4vh 0 ;
+  font-size: 25px;
+  font-family: "dune";
+  font-weight: lighter;
+  text-align: center;
+
+  }

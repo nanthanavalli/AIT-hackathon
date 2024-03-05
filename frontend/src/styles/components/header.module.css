@@ -1,27 +1,39 @@
-.container {
-  font-family: "Space Grotesk", sans-serif;
+  .container {
+  font-family: "dune";
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  border-radius: 0 0 0 0;
   z-index: 5;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 25px;
+  /* margin-top: 3%; */
+ }
+
+/* .navbar.active{
+  background-color: #503938;
+} */
+
+.header_bg
+{
+  border: 1px solid #503938;
+  /* border-radius: 44px; */
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
+  transition:all ease-in-out ;
+  border-radius: 0 0 20px 20px;
 }
 
 .active{
   color: red;
 }
 .inactive{
-  color: white;
+  color:silver;
 }
 .logo {
   height: 40px;
   margin: 0.5rem 0.5rem 0.5rem 0rem;
+  margin-left: 20px;
 }
 
 .menu {
@@ -124,6 +136,7 @@
   }
 
   .navMobile {
+    
     display: block;
   }
 

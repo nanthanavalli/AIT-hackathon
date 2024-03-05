@@ -3,7 +3,7 @@
   background-color: #030303;
   height: 100%;
   position: relative;
-  font-family: "Space Grotesk", sans-serif;
+  
 }
 
 .footer {
@@ -14,9 +14,10 @@
   margin-top: 3rem;
   position: relative;
   z-index: 999;
+  font-family: "minimal";
+  font-size: medium;
 }
 .footerContainer{
-  background-image: url("../../assets/images/TECHNOWAYS.png");
   background-size: contain;
   background-position: center;
   min-height: 30vh;
@@ -73,10 +74,27 @@
   display: flex;
   justify-content: space-between;
   column-gap: 5rem;
+  font-family: "minimal";
+  font-size: medium;
 }
 
-.addressPara {
+.footerLink {
+  font-family: "minimal";
+  font-size: 23px;
+  color: white;
+}
+
+.title{
+  font-family: "dune";
+  font-size: 18px;
+  
+}
+
+
+.contactPara {
   width: 20rem;
+  font-family: "minimal";
+  font-size: 20px;
 }
 
 .contactLogo {
@@ -86,10 +104,11 @@
 @media screen and (width < 1200px) {
   .footer {
     display: block;
-  }
+   } 
   .menuContactsDiv {
     margin-top: 3rem;
     justify-content: space-evenly;
+   
   }
 }
 

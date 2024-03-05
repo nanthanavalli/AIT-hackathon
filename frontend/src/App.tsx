@@ -2,18 +2,17 @@ import "./App.css";
 
 import Home from "./page/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import Location from "./page/Location";
 import About from "./page/About";
-// import FestXsvce from "./components/BottomText";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import bg from "./assets/images/background/img-1.png";
-// import AnimatedCursor from "react-animated-cursor";
+import bg from "./assets/images/background/img1-upscaled.png";
 import { useEffect, useState } from "react";
-import Sponsers from "./page/Sponsers";
+import Sponsers from "./page/Contacts";
 import ReactGA from "react-ga";
 import Footer from "./components/Footer";
+import Domain from "./page/Domain";
+import RoadMap from "./page/RoadMap";
 
 
 
@@ -46,6 +45,24 @@ const router = createBrowserRouter([
     element: (
       <>
         <Sponsers />,
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/domain",
+    element: (
+      <>
+        <Domain />,
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/roadmap",
+    element: (
+      <>
+        <RoadMap />,
         <Footer />
       </>
     ),

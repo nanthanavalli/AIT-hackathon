@@ -1,0 +1,49 @@
+.body {
+    padding: 7rem 2rem 0 2rem;
+    font-family: "dune";
+    & h1 {
+        text-align: center;
+    }
+
+    min-height: 100vh;
+}
+
+.contacts {
+    font-family: minimal;
+    font-size: 2vw;
+    display: flex;
+    letter-spacing: 0.2ch;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    min-height: 70vh;
+    gap: 0.6vw;
+    border-radius: 30px;
+    color: white;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+    
+
+}
+
+.container {
+    min-height: 5vh;
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+    border: 1px solid #503938;
+    border-radius: 44px;
+    background-color: rgba(50, 44, 44, 0.258);
+    backdrop-filter: blur(10px);
+    font-family: "minimal";
+  }
+
+.title{
+    margin: 4vh 0 ;
+    font-size: 25px;
+    font-family: "dune";
+    font-weight: lighter;
+    text-align: center;
+  }
