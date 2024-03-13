@@ -10,6 +10,16 @@
     font-family: "minimal";
   }
 
+  h3{
+    font: bold;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+  }
+  
+  p{
+    font-size: 25px;
+    letter-spacing: 0.1rem;
+  }
   .title{
     margin: 4vh 0 ;
     font-size: 25px;

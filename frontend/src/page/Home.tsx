@@ -4,10 +4,10 @@ import About from "./About";
 import Location from "./Location";
 import Domain from "./Domain";
 import RoadMap from "./RoadMap";
-import Scroller from "../components/Scroller";
+import Sponsors from "./Sponsors";
 import Timer from "../components/Timer";
 import Footer from "../components/Footer";
-import Sponsers from "./Contacts";
+import Contacts from "./Contacts";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import Header from "../components/Header";
@@ -20,15 +20,15 @@ const Home = () => {
         <div className={styles.content}>
           <p className={styles.rev}>24HRS HACKATHON</p>
           <h1 className={styles.tech}>
+            <span>H</span>
+            <span>A</span>
+            <span>C</span>
+            <span>K</span>
             <span>I</span>
-            <span>n</span>
-            <span>n</span>
-            <span>o</span>
-            <span>h</span>
-            <span>a</span>
-            <span>c</span>
-            <span>k</span>
-            <span>s</span>
+            <span>T</span>
+            <span>3</span>
+            <span>.</span>
+            <span>0</span>
           </h1>
           <br />
           <p className={styles.time}>MAR 19 2024</p>
@@ -53,7 +53,8 @@ const Home = () => {
       </div>
       <About />
       <Location />
-      <Sponsers />
+      <Contacts />
+      <Sponsors />
       <Domain />
       <RoadMap />
       <Footer />
